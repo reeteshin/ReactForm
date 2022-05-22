@@ -45,6 +45,7 @@ export default function ReactForm() {
                   if(page===currentPage.length-1)
                   {
                         console.log(formData)
+                        alert(formData)
                   }
                   else
                   {
