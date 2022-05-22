@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Personal.css'
 export default function PersonalInfo({ formData, setFormData }) {
   return (
     <div className="Personal-info">

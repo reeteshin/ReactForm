@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Signup.css'
 export default function SingupForm({ formData, setFormData }) {
   return (
     <div className="sing-up">

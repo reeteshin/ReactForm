@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PersonalInfo from "./PersonalInfo";
 import SingupForm from "./SingupForm";
-
+import './ReactForm.css'
 export default function ReactForm() {
   const [page, setPage] = useState(0);
   const currentPage = ["Sign Up", "Personal Info"];
@@ -11,7 +11,7 @@ export default function ReactForm() {
     password: "",
     confirmPassword: "",
     firstName: "",
-    userName: "",
+    lastName: "",
   });
 
   const DispalyOnTheBasisOfPage = () => {
@@ -25,11 +25,11 @@ export default function ReactForm() {
   return (
     <div>
       <div className="form">
-        <div className="progressbar"></div>
+        
 
         <div className="form-container">
           <div className="Header"><h2>{currentPage[page]}</h2></div>
-          <div className="body">{DispalyOnTheBasisOfPage()}</div>
+          <div className="formbody">{DispalyOnTheBasisOfPage()}</div>
           <div className="footer">
             <button
               disabled={page == 0}

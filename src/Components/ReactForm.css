@@ -1,0 +1,43 @@
+.form{
+    background:linear-gradient(#ccf9f9, #9198e5);
+    height: 100vh;
+    padding-top: 150px;
+
+}
+.form-container{
+  
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Header Header Header"
+    "formbody formbody formbody"
+    "footer footer footer"
+    ;
+    
+    grid-gap: 10px;
+  
+}
+
+.Header{
+    
+        grid-area: Header;
+}
+.formbody{
+    
+    
+    grid-area: formbody;
+}
+.footer{
+   
+        grid-area: footer;
+}
+.footer>button{
+    margin: 5px;
+    
+    border-radius: 5px;
+    background: none;
+}
+.footer>button:hover{
+    background:  #9198e5;
+}
